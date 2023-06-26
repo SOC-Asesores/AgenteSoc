@@ -1,0 +1,775 @@
+:root{
+    --primary-color: #006D4E;
+    --ligth-primary-color: #4ED176;
+    --secundary-color: #079DEF;
+    --ligth-secundary-color: #52DEFF;
+    --third-color: #FF7150; 
+    --ligth-third-color: #FF9C9C;
+    --fourth-color: #FF9FCF;
+    --ligth-fourth-color: #FFBDDE;
+    --skyblue-color: #2AB5DF;
+    --wet-asphalt-color: #4F4F4F;
+    --light-color: #F0F6FD;
+    --white-smoke-color: #F2F2F7;
+}
+
+body{
+    background-color: white;
+    font-family: 'Open Sans';
+    color: #4F4F4F;
+}
+
+/*----*/
+
+.announcement {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background: var(--ligth-primary-color);
+    color: white;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+.announcement a { 
+    color: white; 
+}
+.announcement a:hover {
+    transition: 0.3s;
+    font-weight: 700;
+    color: white;
+}
+.announcement p{
+    margin: 6px;
+}
+.ico-radio{
+    font-size: 14px !important;
+}
+
+header{
+    background-color: var(--primary-color);
+}
+.logo{
+    margin-right: 22px;
+}
+
+.marging{
+    margin: 22px 0px;
+}
+.m-auto{
+    margin: auto;
+}
+.btn-header{
+    color: white;
+    background-color: var(--secundary-color);
+}
+
+.btn-header:hover{
+    transition: 0.3s;
+    color: var(--secundary-color);
+    background-color: white;
+    border: 1px solid var(--secundary-color);
+}
+
+.cta-contacto{
+    color: white;
+    text-decoration:none;
+}
+.cta-contacto:hover{
+    color: white;
+    text-decoration: underline;
+}
+.text-li{
+    font-weight: 200;
+}
+label a {
+    color: var(--secundary-color);
+}
+/*cta cotizador*/
+.btn-cotizador {
+    background-color: white;
+    border-radius: 10px;
+    border: var(--secundary-color) solid 1px;
+    margin: 22px;
+    text-align: center;
+    width: 250px;
+    color: var(--secundary-color);
+}
+
+.btn-cotizador:hover {
+    border-color: var(--secundary-color) !important;
+    color: white !important;
+    background-color: var(--secundary-color);
+}
+
+/*cta Formulario*/
+.btn-formulario {
+    background-color: var(--secundary-color);
+    border-radius: 10px;
+    margin: 22px;
+    text-align: center;
+    width: 250px;
+    color: white;
+}
+.btn-formulario a{
+    text-decoration: none;
+    color: white;
+}
+.btn-formulario:hover {
+    border-color: var(--secundary-color) !important;
+    color: var(--secundary-color) !important;
+}
+.btn-formulario a:hover{
+    text-decoration: none;
+    color: var(--secundary-color);
+    border: var(--secundary-color) 1px;
+
+}
+
+.btn-banner{
+color: white;
+background-color: var(--secundary-color);
+border-radius: 19px;
+margin: 22px;
+text-align: center;
+width: 250px;
+}
+.btn-banner:hover{
+    color: var(--secundary-color);
+    background-color: white;
+    border: var(--secundary-color) 1px solid;
+    margin: 22px;
+    text-align: center;
+    }
+
+.btn-asesorias{
+    display: flex;
+    width: 250px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    background: white;
+    color: var(--secundary-color);
+    border: var(--secundary-color) solid;
+    border-radius: 30px;
+    text-decoration: none;
+
+}
+.btn-asesorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    background: var(--ligth-primary-color);
+    color: white;
+    border: none !important;
+    text-decoration: none;
+}
+.btn-asesorias:hover{
+    background-color: var(--ligth-primary-color) !important;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.modal-footer{
+    justify-content: center;
+}
+.btn-enviar{
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    background: white;
+    color: var(--secundary-color);
+    border: var(--secundary-color) solid;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn-enviar:hover{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    background: var(--secundary-color);
+    color: white;
+    border: var(--secundary-color) solid;
+    border-radius: 30px;
+    text-decoration: none;
+}
+/*Carrusel-Home*/
+.steps-home{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+/*--Cotizadores--*/
+.card{
+    border-color:  var(--ligth-primary-color);
+    border-radius: 0px !important;
+}
+.card .card-body{
+    padding: 0%;
+}
+.text-body-secondary{
+    background-color: var(--ligth-primary-color);
+    text-align: center;
+}
+.btn-asesorias-home{
+    text-decoration: none;
+    margin: auto;
+    color: white;
+}
+
+
+.btn-asesorias:hover{
+    transition: 0.3s;
+    color: white;
+    background: var(--secundary-color);
+}
+
+.boton-primario{
+    text-decoration: none;
+    background-color: var(--secundary-color);
+    border: none;
+}
+.boton-primario a{
+    color: white !important;
+    text-decoration: none;
+}
+.cta-center{
+    text-align: center;
+}
+.carousel{
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.carousel-caption{
+    color: var(--primary-color);
+    right: 50%;
+    bottom: 15.25rem;
+    left: 10%;
+}
+.banner{
+    position: relative;
+    z-index: 1;
+}
+
+.texto-banner{
+    position: absolute;
+    z-index: 3;
+}
+
+
+.texto-bannerd{
+    position: absolute;
+    z-index: 3;
+    bottom: 60%;
+    left: 10%;
+}
+
+.texto-banner h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.texto-banner p{
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.grad{
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255,.5);
+    background: linear-gradient(90deg, rgba(255,255,255,0.75) 33.334%, rgba(255,255,255,0) 66.667%);
+}
+.carousel-caption h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+
+}
+
+.img-tablet{
+    /* width: -webkit-fill-available; */
+    width: 60%;
+}
+
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+}
+h2{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+}
+h3{
+    font-size: 18px;
+    font-weight: 200;
+    color: #4F4F4F;
+}
+
+h4{
+    font-size: 16px;
+    text-align: start;
+    font-weight: 400;
+    margin-left: 22px;
+    color: #4F4F4F;
+}
+
+.contacto-titulo{
+    font-size: 22px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.contacto-text{
+    font-size: 16px;
+    font-weight: 300;
+    color: #4F4F4F;
+}
+
+.terminos-condiciones{
+    text-align: center;
+    height: fit-content;
+    background-color: #F2F2F2;
+}
+.contacto{
+    background-color: #FAFAFA;
+    text-align: center;
+    height: fit-content;
+}
+.legales{
+    color: var(--secundary-color) !important;
+    text-decoration: underline !important;
+}
+.titleGlober{
+    font-weight: 600;
+}
+.titulo-avisos{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 51px;
+    text-align: center;
+}
+.footer-derechos{
+    text-align: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 18px;
+    margin-bottom: 0;}
+
+.steps-cotizador{
+    width: 580px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 22px auto;
+    
+}
+.card-seguro{
+    border-color: #737373;
+    border-radius: 6px !important;
+}
+
+.img-seguro{
+    width: 30%;
+    margin: 12px auto;
+}
+
+
+/*---Cotizador---*/
+.cta-regresar{
+    color: var(--secundary-color);
+    text-decoration: none;
+}
+
+.btn-siguiente{
+    background: none;
+    border: none;
+}
+.btn-siguiente a{
+    height: 35px;
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    background: white;
+    color: var(--secundary-color);
+    border: var(--secundary-color) solid;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn-siguiente a:hover{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    background: var(--secundary-color);
+    color: white;
+    border: var(--secundary-color) solid;
+    border-radius: 30px;
+}
+.label-cotizador{
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.form-cotizador{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    color: #495564;
+    font-weight: 200;
+}
+.obligatorio{
+    color: var(--third-color);
+}
+
+.titulo-marca{
+    font-weight: 700;
+    color: var(--primary-color);
+
+}
+
+.form-check-input:checked{
+    background-color: var(--ligth-primary-color);
+    border: var(--wet-asphalt-color);
+}
+.marca-cotizador{
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    padding: 9px;
+
+}
+
+.marca-cotizador h3{
+    display: contents;
+}
+.marca-cotizador span{
+    color: var(--wet-asphalt-color);
+    font-weight: 300;
+}
+
+.titulo-tabla{
+    font-weight: 700;
+    font-size: 20px;
+    color: #4F4F4F;
+}
+.subtitulo-tabla{
+    font-size: 15px;
+}
+#aseguradoras-opciones{
+    display: flex;
+    overflow-x: auto;
+}
+#aseguradoras-opciones::-webkit-scrollbar{
+    width: 0;
+}
+
+#aseguradoras-opciones .datos-aseguradoras{
+    min-width: 110px;
+    text-align: center;
+    margin: 0px 35px;
+}
+.datos-aseguradoras img{
+    height: 30px;
+    width: auto;
+}
+
+.bx-check{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+.bx-block{
+    color: var(--third-color);
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+.btn-enviar-cotizacion{
+    background-color: white;
+    color: var(--secundary-color);
+    border: var(--secundary-color) 1px solid;
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 8px 20px;
+    font-size: 20px;
+}
+.modal-confirmacion{
+    border: var(--ligth-primary-color) solid;
+}
+.logo-texto{
+    color: var(--primary-color);
+}
+.btn-enviar-cotizacion a{
+    text-decoration: none;
+    color: var(--secundary-color);
+}
+.btn-check+.btn:hover{
+    border-color: var(--ligth-primary-color);
+    color: var(--ligth-primary-color);
+}
+.btn-check:checked+.btn{
+    background-color: var(--ligth-primary-color) !important;
+    border: var(--ligth-primary-color);
+    color:white !important;
+}
+.taps-outline{
+    border-color: #737373;
+    color: #737373;
+}
+.mb-50{
+    margin-bottom: 60px;
+}
+.logo-banco{
+    width: auto;
+    height: 38px;
+}
+/*--Barra- Cotizador Auto*/
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.barra ul{
+    display: flex;
+    margin-top: 80px;
+}
+
+.barra ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+/* .barra ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+} */
+.barra i{
+    color: white !important;
+}
+.barra ul li p{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.barra ul li .pasos{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--ligth-primary-color);
+    border-color: var(--ligth-primary-color);
+    max-width: 12px 0px;
+}
+#paso-proceso{
+   color: var(--ligth-primary-color) !important;
+}
+.barra ul li .paso-faltante{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid var(--ligth-primary-color);
+    max-width: 12px 0px;
+}
+.barra-progreso{
+    content: " ";
+    position: absolute;
+    width: 155px;
+    height: 5px;
+    background-color: #495564;
+}
+.texto-activo{
+    color: var(--ligth-primary-color);
+    font-weight: 600 !important;
+}
+.icono-correcto{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: var(--ligth-primary-color);
+    border-color: var(--ligth-primary-color);
+}
+.icono-correcto .bx{
+    color: white;
+    font-size: 70px;
+}
+.barra hr{
+    position: absolute; 
+    top: 175px; 
+    opacity:0.9; 
+    width: 425px;
+    color: var(--ligth-primary-color);
+    border: solid 2px;
+    z-index: -1;
+}
+
+.full-w{
+    display: block;
+}
+
+/**--MQ---*/
+
+@media (min-width: 375px) {
+    .btn-banner{
+        width: 190px;
+    }
+    .full-w{
+        display: none;
+    }
+    h4 {
+        text-align: center;
+        margin: auto;
+    }
+    .taps-outline{
+        font-size: 15px;
+    }
+    .btn-header{
+        font-size: 12px;
+        margin-bottom: 34px !important;
+    }
+    .btn-formulario {
+        width: 220px;
+        margin: 18px 0px;
+    }
+    .marca-cotizador .titulo-marca{
+        font-size: 16px;
+    }
+    .marca-cotizador{
+        text-align: center;
+    }
+    .text-end .btn-enviar-cotizacion{
+        margin-top: 12px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .btn-check:checked+.btn{
+        font-size: 15px;
+        align-items: center;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .img-tablet{
+        width: 200px;
+    }
+    .steps-cotizador{
+        width: 300px;
+    }
+    .btn-cotizador{
+        width: 150px;
+        margin: auto
+    }
+    .logo-banco{
+        width: auto;
+        height: 30px;
+    }
+    #aseguradoras-opciones .datos-aseguradoras{
+        margin: 0px 22px;
+        min-width: 116px;
+    }
+    .bx-block {
+        font-size: 28px;
+    }
+    h1{
+        font-size: 32px;
+    }
+};
+
+
+.barra ul li{
+    display: grid;
+    place-items: center;
+}
+.barra ul{
+    display: -webkit-box;
+}
+/* Responsive Css  */
+
+@media (max-width: 980px) {
+    .barra ul{
+        margin-top: 22px;
+        padding: inherit;
+    }
+    .barra hr{
+        width: 260px;
+        top: 115px
+    }
+    ul{
+        flex-direction: column;
+    }
+    .barra ul li{
+        margin: 0px 15px;
+    }
+    .titulo-tabla{
+        font-size: 13px;
+    }
+    .mt-auto{
+        margin-top: 120px !important;
+    }
+    .subtitulo-tabla{
+        font-size: 14px;
+    }
+    .barra ul li p {
+        font-size: 12px;
+        background-color: white;
+    }
+    .btn-cotizador{
+        width: 150px;
+        margin: auto
+    }
+}
+
+#textoUno{
+    color: var(--primary-color);
+}
+
+#pasoUnoIco, #pasoDosIco, #pasoTresIco{
+    opacity: 0.5;
+}
+
+    .image-container img {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+      }

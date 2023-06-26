@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Agente SOC | Cotizador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+    <header class="p-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <a href="index.html">
+                <img src="./img/logoAGS2.png" width="200" alt="" srcset="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!----Contenido-->
+    <main>
+      <!---Barra Progreso-->
+      <div class="container">
+        <div class="barra">
+          <hr> 
+          <ul>
+              <li>
+                <div class="pasos paso-vehiculo">
+                  <i class='bx bx-check'></i>
+                </div>
+                <p class="texto-activo">Vehículo</p>
+              </li>
+              <li>
+                <div class="pasos paso-aseguradora">
+                  <i class='bx bx-check'></i>
+                </div>
+                <p class="texto-activo">Aseguradoras</p>
+              </li>
+              <li>
+                <div class="pasos paso-conductor">
+                  <i class='bx bx-check'></i>
+                </div>
+                <p class="texto-activo">Conductor</p>
+              </li>
+              <li>
+                <div class="pasos paso-cotizacion">
+                  <i id="paso-proceso" class='bx bx-check'></i>
+                </div>
+                <p class="texto-activo">Cotización</p>
+              </li>
+          </ul>
+      </div>
+      </div>
+        <div class="container">
+          <!--Container-->
+          <div class="row marging">
+            <div class="col-12 col-md-6 marca-cotizador">
+              <h3 class="titulo-marca"><span>Auto Cotizado:</span> BMW 2020 M5 Automático</h3>
+            </div>
+            <div class="col-12 col-md-6 text-end">
+            <button type="button" class="btn-enviar-cotizacion" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Enviar cotización
+            </button>
+            </div>
+          </div> <hr>
+          <div class="row mb-3">
+            <div class="col mb-3">
+              <label for="inputState" class="form-label label-cotizador">Tipo de plan</label> <br>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="checkbox" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn taps-outline" for="btnradio1">Responsabilidad Social</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn taps-outline" for="btnradio2">Limitado</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn taps-outline" for="btnradio3">Amplio</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn taps-outline" for="btnradio4">Plus</label>
+              </div>
+            </div> <!--Periodo pago-->
+            <div class="col mb-3">
+              <label for="inputState" class="form-label label-cotizador">Periodo de pago</label> <br>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" checked>
+                <label class="btn taps-outline" for="btnradio5">Anual</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                <label class="btn taps-outline" for="btnradio6">Trimestral</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                <label class="btn taps-outline" for="btnradio7">Semestral</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                <label class="btn taps-outline" for="btnradio8">Mensual</label>
+              </div>
+            </div>
+          </div> <hr> <br>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-3 col-6 text-start mt-auto">
+                <h3 class="titulo-tabla">Prima anual</h3>
+                <p class="subtitulo-tabla">Daños Materiales</p>
+                <p class="subtitulo-tabla">Cristales</p>
+                <p class="subtitulo-tabla">Robo total</p>
+                <p class="subtitulo-tabla">Responsabilidad Civil</p>
+                <p class="subtitulo-tabla">Gastos Médicos</p>
+                <p class="subtitulo-tabla">Asistencia Vial</p>
+                <p class="subtitulo-tabla">Asistencia Legal</p>
+                <p class="subtitulo-tabla">Multas y Corralones</p>
+                <p class="subtitulo-tabla">Desbielamiento</p>
+                <p class="subtitulo-tabla">RC Obligatoria Federal</p>
+                <p class="subtitulo-tabla">Pérdida Parcial</p>
+                <p class="subtitulo-tabla">RC Obligatoria Bienes</p>
+              </div>
+              <div class="col-sm-9 col-6" id="aseguradoras-opciones">
+                  <div class="datos-aseguradoras">
+                    <img src="img/gnp.png" width="80%" class="mb-3"> <br>
+                    <button type="button" class="btn btn-header mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Me interesa</button>
+                    <h3 class="titulo-tabla">$18,532.64</h3>
+                    <p>5%</p>
+                    <p>20%</p>
+                    <p>10%</p>
+                    <p>$3 millones</p>
+                    <p>$200 millones</p>
+                    <i class='bx bx-check'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <p>5%</p>
+                    <i class='bx bx-block'></i>
+                    
+                  </div>
+                  <div class="datos-aseguradoras">
+                    <img src="img/ana.png" width="80%" class="mb-3"> <br>
+                    <button type="button" class="btn btn-header mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Me interesa</button>
+                    <h3 class="titulo-tabla">$18,532.64</h3>
+                    <p>5%</p>
+                    <p>20%</p>
+                    <p>10%</p>
+                    <p>$3 millones</p>
+                    <p>$200 millones</p>
+                    <i class='bx bx-check'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <p>5%</p>
+                    <i class='bx bx-block'></i>
+                    
+                  </div>
+                  <div class="datos-aseguradoras">
+                    <img src="img/sura.png" width="80%" class="mb-3"> <br>
+                    <button type="button" class="btn btn-header mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Me interesa</button>
+                    <h3 class="titulo-tabla">$18,532.64</h3>
+                    <p>5%</p>
+                    <p>20%</p>
+                    <p>10%</p>
+                    <p>$3 millones</p>
+                    <p>$200 millones</p>
+                    <i class='bx bx-check'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <p>5%</p>
+                    <i class='bx bx-block'></i>
+                    
+                  </div>
+                  <div class="datos-aseguradoras">
+                    <img src="img/zurich.png" width="80%" class="mb-3"> <br>
+                    <button type="button" class="btn btn-header mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Me interesa</button>
+                    <h3 class="titulo-tabla">$18,532.64</h3>
+                    <p>5%</p>
+                    <p>20%</p>
+                    <p>10%</p>
+                    <p>$3 millones</p>
+                    <p>$200 millones</p>
+                    <i class='bx bx-check'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <i class='bx bx-block'></i> <br>
+                    <p>5%</p>
+                    <i class='bx bx-block'></i>
+                    
+                  </div>
+  
+              </div>
+            </div>
+          </div>
+          <!--
+            <div class="container full-w text-center">
+              <div class="row">
+                <div class="col-sm-2 text-start">
+                </div>
+                <div class="col-sm-10">
+                  <div class="row">
+                    <div class="col-3 col-sm-3">
+                      <img src="img/gnp.png" width="40%" class="mb-3"> <br>
+                      <button type="button" class="btn btn-header mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Contratar ahora</button>
+                    </div>
+                    <div class="col-3 col-sm-3">
+                      <img src="img/ana.png" width="40%" class="mb-3"> <br>
+                      <button type="button" class="btn btn-header mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Contratar ahora</button>
+                    </div>
+                    <div class="col-3 col-sm-3">
+                      <img src="img/sura.png" width="40%" class="mb-3"> <br>
+                      <button type="button" class="btn btn-header mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Contratar ahora</button>
+                      
+                    </div>
+                    <div class="col-3 col-sm-3">
+                      <img src="img/zurich.png" width="40%" class="mb-3"> <br>
+                      <button type="button" class="btn btn-header mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Contratar ahora</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+            <!--Fin tabla-->
+            <!---Modal Conformacion-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-confirmacion">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Confirma tu correo electrónico</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">       
+                <div class="col-md-12">
+                  <label for="inputState" class="form-label label-cotizador">Tu cotización llegará pronto a:</label>
+                  <input type="email" class="form-cotizador form-control" id="exampleFormControlInput1" placeholder="correo@correo.com">
+                </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn-enviar-cotizacion" data-bs-toggle="modal" data-bs-target="#envioCorrecto">
+                        Enviar Cotización
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Modal Confirmacion-->
+              <div class="modal fade" id="envioCorrecto" data-bs-backdrop="static" tabindex="-1" aria-labelledby="envioCorrecto" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-confirmacion">
+                    <div class="modal-body">       
+                      <div class="col-md-12 text-center">
+                        <div class="icono-correcto">
+                          <i class='bx bx-check'></i>
+                        </div> <br>
+                        <p>Tu información se mando correctamente</p>
+                        <p>Hola, (Nombre del cliente)</p>
+                        <p>Soy tu agente, (Nombre del asesor)</p>
+                        <p>Me pongo en contacto contigo a la brevedad para gestionar</p>
+                        <p><strong>la emisión de la póliza para tu seguro de auto.</strong></p><br>
+                        <button type="button" class="btn-enviar-cotizacion mb-3" data-bs-dismiss="modal"> <a href="index.html">Entiendo</a> </button> <br>
+                        <p class="text-end logo-texto m-0"><strong>Juntos</strong>, lo hacemos real</p>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <!--Fin Modal Confirmacion-->
+              <!--Modal Agente-->
+              <div class="modal fade" id="exampleModal2" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-confirmacion">
+                    <div class="modal-body">       
+                      <div class="col-md-12 text-center">
+                        <p>Hola, (Nombre del cliente)</p>
+                        <p>Soy tu agente, (Nombre del asesor)</p>
+                        <p>Me pongo en contacto contigo a la brevedad para gestionar</p>
+                        <p><strong>la emisión de la póliza para tu seguro de auto.</strong></p><br>
+                        <button type="button" class="btn-enviar-cotizacion mb-3" data-bs-dismiss="modal"> <a href="index.html">Entiendo</a> </button> <br>
+                        <p class="text-end logo-texto m-0"><strong>Juntos</strong>, lo hacemos real</p>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <!--Fin Modal Agente-->
+          <!--cta-->
+        <div class="row marging">
+          <div class="col-md-12">
+            <a class="cta-regresar" href="cotizador-conductor.html">Regresar</a>
+          </div>
+        </div>
+    </main>
+   <!--  <footer>  
+      <p>© 2023 SOC Líderes en Asesoría Financiera</p>
+    </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
